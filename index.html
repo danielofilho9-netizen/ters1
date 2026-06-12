@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title data-i18n="title">Fibra Tecnologia - Soluções em Sistemas de Transporte da Informação</title>
+    <meta name="description" content="Fibra Tecnologia - Soluções avançadas em Sistemas de Transporte da Informação (STI), cabeamento estruturado e redes de fibra óptica.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css?v=2.0.0">
+    <link rel="icon" type="image/png" href="img/logo/favicon.png">
+</head>
+
+<body class="dark-theme">
+
+    <header id="siteHeader">
+        <div class="nav-container">
+            <div class="logo-wrapper">
+                <img class="logo" src="img/logo/logo_empresa.png" alt="Logo Fibra Tecnologia">
+            </div>
+
+            <nav class="main-nav">
+                <!-- Menu Links -->
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="active" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#institucional" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="#servicos" data-i18n="nav.services">Serviços</a></li>
+                    <li><a href="#parceiros-sessao" data-i18n="nav.partners">Parceiros</a></li>
+                    <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+
+                <!-- Ações do Header: Seletor de Idiomas, Botão de Tema & Hamburger -->
+                <div class="header-actions">
+                    <!-- Seletor de Idiomas -->
+                    <div class="language-selector">
+                        <button id="langSelectBtn" class="lang-select-btn" aria-label="Selecionar idioma" data-i18n-aria="langSelectBtn">
+                            <span id="activeFlag" class="flag-emoji">🇧🇷</span>
+                            <span id="activeLangText" class="lang-text">PT</span>
+                            <svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="lang-dropdown" id="langDropdown">
+                            <button class="lang-option active" data-lang="pt">
+                                <span class="flag-emoji">🇧🇷</span> Português
+                            </button>
+                            <button class="lang-option" data-lang="en">
+                                <span class="flag-emoji">🇺🇸</span> English
+                            </button>
+                            <button class="lang-option" data-lang="es">
+                                <span class="flag-emoji">🇪🇸</span> Español
+                            </button>
+                        </div>
+                    </div>
+
+                    <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+                        </svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+
+                    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <nav class="secondary-nav">
+            <div class="secondary-nav-container">
+                <a href="#s-infra">
+                    <svg class="sec-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                        <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                        <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                    </svg>
+                    <span data-i18n="nav.s1">Infraestrutura para Redes</span>
+                </a>
+                <a href="#s-fibra">
+                    <svg class="sec-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                    <span data-i18n="nav.s2">Redes Ópticas</span>
+                </a>
+                <a href="#s-vistoria">
+                    <svg class="sec-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                        <path d="M9 11l2 2 4-4"></path>
+                    </svg>
+                    <span data-i18n="nav.s3">Vistorias Técnicas</span>
+                </a>
+                <a href="#s-circuito">
+                    <svg class="sec-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="18" cy="18" r="3"></circle>
+                        <circle cx="6" cy="6" r="3"></circle>
+                        <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                        <path d="M11 18H8a2 2 0 0 1-2-2V9"></path>
+                    </svg>
+                    <span data-i18n="nav.s4">Circuitos de Transmissão</span>
+                </a>
+                <a href="#s-eletrica">
+                    <svg class="sec-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    <span data-i18n="nav.s5">Elétricas e Performance</span>
+                </a>
+                <a href="#s-condominio">
+                    <svg class="sec-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 21h18"></path>
+                        <path d="M19 21V9a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v12"></path>
+                        <path d="M9 21v-6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6"></path>
+                        <line x1="9" y1="10" x2="9.01" y2="10"></line>
+                        <line x1="15" y1="10" x2="15.01" y2="10"></line>
+                    </svg>
+                    <span data-i18n="nav.s6">Infraestrutura Condominial</span>
+                </a>
+                <a href="#s-altura">
+                    <svg class="sec-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M8 3L1 21h22L16 9l-4 8-4-14z"></path>
+                    </svg>
+                    <span data-i18n="nav.s7">Trabalhos em Altura</span>
+                </a>
+                <a href="#s-automacao">
+                    <svg class="sec-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A5.5 5.5 0 0 0 12.5 3 5.5 5.5 0 0 0 7 8.5c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"></path>
+                        <line x1="9" y1="18" x2="15" y2="18"></line>
+                        <line x1="10" y1="22" x2="14" y2="22"></line>
+                    </svg>
+                    <span data-i18n="nav.s8">Automação e Design Luminotécnico</span>
+                </a>
+            </div>
+        </nav>
+
+    </header>
+<!-- Fiber Optic Scroll Progress Indicator -->
+    <div class="fiber-scroll" id="fiberScroll">
+        <div class="fiber-track-container">
+            <div class="fiber-track">
+                <div class="fiber-light"></div>
+                    <div class="fiber-pulse"></div>
+                <div class="fiber-pulse"></div>
+                <div class="fiber-pulse"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Hero / Home -->
+    <section id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text-block">
+                <span class="hero-tagline" data-i18n="hero.tagline">Fibra Tecnologia</span>
+                <h1 data-i18n="hero.title">Infraestrutura de <span class="highlight">alta performance</span>.</h1>
+                <p data-i18n="hero.description">Sediada em Porto Alegre/RS, somos especialistas em soluções de TI e Telecomunicações, unindo engenharia elétrica de ponta e redes de longa distância.</p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn btn-primary-action" data-i18n="hero.btn_quote">Solicitar Orçamento</a>
+                    <a href="#servicos" class="btn btn-secondary-action" data-i18n="hero.btn_services">Nossos Serviços</a>
+                </div>
+                <div class="badges">
+                    <span class="badge"><i class="badge-dot"></i> <span data-i18n="hero.badge_cft">Equipe CFT & CREA</span></span>
+                    <span class="badge"><i class="badge-dot"></i> <span data-i18n="hero.badge_fiber">Redes Ópticas</span></span>
+                    <span class="badge"><i class="badge-dot"></i> <span data-i18n="hero.badge_cabling">Cabeamento Estruturado</span></span>
+                    <span class="badge"><i class="badge-dot"></i> <span data-i18n="hero.badge_electrical">Engenharia Elétrica</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre / Institucional -->
+    <section id="institucional">
+        <div class="container">
+            <span class="section-tag" data-i18n="about.tag">Quem Somos</span>
+            <h2 class="section-title" data-i18n="about.title">A Empresa</h2>
+            <p class="empresa-texto" data-i18n="about.desc">
+                A Fibra Tecnologia é uma empresa especializada em soluções tecnológicas, infraestrutura técnica e serviços especializados, atuando nas áreas de redes de computadores, telecomunicações, automação, sistemas elétricos e acesso por cordas. Com sede em Porto Alegre/RS, desenvolvemos projetos personalizados voltados para eficiência operacional, conectividade, segurança e desempenho técnico, atendendo demandas corporativas, industriais e comerciais com alto padrão de qualidade e confiabilidade.
+            </p>
+            <p class="empresa-texto">
+                Nossa atuação contempla implantação e manutenção de redes ópticas e metálicas, cabeamento estruturado, circuitos de transmissão de dados, infraestrutura elétrica, sistemas de energia ininterrupta, automação e serviços executados em altura por meio de técnicas de acesso por cordas. Contamos com uma equipe formada por profissionais experientes e qualificados, com registros homologados pelos Conselhos Federais e Regionais (CFT e CREA), certificações técnicas emitidas por fabricantes e capacitações específicas para trabalhos em altura, garantindo conformidade com normas técnicas, segurança operacional e excelência em cada etapa dos projetos executados.
+            </p>
+            <p class="empresa-texto">
+                Na Fibra Tecnologia, acreditamos que cada projeto exige planejamento, análise técnica e execução precisa. Por isso, trabalhamos com foco na entrega de soluções técnicas integradas, unindo inovação, confiabilidade e experiência prática para transformar desafios complexos em estruturas seguras, funcionais e preparadas para acompanhar a evolução tecnológica dos nossos clientes, sempre priorizando eficiência, qualidade e relações de confiança duradouras.
+            </p>
+
+            <div class="grid-institucional">
+                <div class="card card-neon">
+                    <div class="card-icon">
+                        <svg class="icon-svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    </div>
+                    <h3 data-i18n="about.mission_title">Missão</h3>
+                    <p data-i18n="about.mission_desc">Entregar soluções técnicas integradas com excelência, inovação e segurança, atuando nas áreas de redes de computadores, automação, infraestrutura elétrica e tecnologia, desenvolvendo projetos personalizados que aumentem a eficiência operacional, a conectividade e a confiabilidade dos sistemas dos nossos clientes. Nosso compromisso é transformar demandas técnicas em estruturas inteligentes, seguras e funcionais, garantindo qualidade em cada etapa da execução.</p>
+                </div>
+                <div class="card card-neon">
+                    <div class="card-icon">
+                        <svg class="icon-svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    </div>
+                    <h3 data-i18n="about.vision_title">Visão</h3>
+                    <p data-i18n="about.vision_desc">Ser reconhecida como referência em tecnologia, infraestrutura e engenharia aplicada, destacando-se pela capacidade técnica, pela inovação constante e pela excelência na execução de projetos que conectam, automatizam e potencializam ambientes corporativos e industriais. Buscamos construir relações de confiança duradouras, contribuindo para a evolução tecnológica e o crescimento sustentável dos nossos clientes.</p>
+                </div>
+                <div class="card card-neon">
+                    <div class="card-icon">
+                        <svg class="icon-svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3 data-i18n="about.values_title">Valores e Princípios</h3>
+                    <ul class="valores-list">
+                        <li data-i18n="about.value_integrity"><strong>Integridade</strong>: Agimos com ética e profissionalismo.</li>
+                        <li data-i18n="about.value_presence"><strong>Presença</strong>: Apoiamos nossos clientes em seus desafios.</li>
+                        <li data-i18n="about.value_engagement"><strong>Engajamento</strong>: Atuamos juntos e em sinergia.</li>
+                        <li data-i18n="about.value_innovation"><strong>Inovação</strong>: Buscamos o novo e o melhor, sempre.</li>
+                        <li data-i18n="about.value_simplicity"><strong>Simplicidade</strong>: Ágeis e objetivos no que fazemos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos">
+        <div class="container">
+            <span class="section-tag" data-i18n="services.tag">O que fazemos</span>
+            <h2 class="section-title" data-i18n="services.title">Nossas Soluções</h2>
+
+            <!-- Solução 1 -->
+            <div class="servico-item" id="s-infra">
+                <div class="slider-container" data-autoplay="true">
+                    <div class="slider-wrapper">
+                        <img class="slide-img img1" src="img/servicos/cabeamento1.jpg" style="display:block" alt="Instalação profissional de rack de cabeamento estruturado">
+                        <img class="slide-img img1" src="img/servicos/cabeamento2.jpg" alt="Organização minuciosa de cabos de rede e conectores RJ45">
+                        <img class="slide-img img1" src="img/servicos/cabeamento3.jpg" alt="Sistemas de cabeamento estruturado finalizado e certificado em rack">
+                    </div>
+                                        <button class="btn-slide btn-prev" aria-label="Slide anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                                        <button class="btn-slide btn-next" aria-label="Próximo slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="slider-dots"></div>
+                </div>
+                <div class="servico-content">
+                    <span class="servico-num">01</span>
+                    <h3 data-i18n="services.s1_title">Projeto e Construção de Infraestrutura para Redes</h3>
+                    <p data-i18n="services.s1_desc">Construção de infraestrutura técnica para cabeamento estruturado, no breaks, banco de baterias, quadros de distribuição de eletricidade, canaletas e racks padrão para ambientes de telecomunicações.</p>
+                    <a href="#contato" class="btn-action-spec" data-i18n="services.btn_spec">Solicitar Orçamento</a>
+                </div>
+            </div>
+
+            <!-- Solução 2 -->
+            <div class="servico-item alternate-row" id="s-fibra">
+                <div class="servico-content">
+                    <span class="servico-num">02</span>
+                    <h3 data-i18n="services.s2_title">Implantação de Redes de Fibras Ópticas</h3>
+                    <p data-i18n="services.s2_desc">Construção completa de redes ópticas: lançamentos de cabos aéreos/subterrâneos, emenda por fusão óptica de alta precisão e testes de avaliação detalhados.</p>
+                    <a href="#contato" class="btn-action-spec" data-i18n="services.btn_spec">Solicitar Orçamento</a>
+                </div>
+                <div class="slider-container" data-autoplay="true">
+                    <div class="slider-wrapper">
+                        <img class="slide-img img2" src="img/servicos/fibra1.jpg" style="display:block" alt="Técnico especializado realizando fusão de fibra óptica">
+                        <img class="slide-img img2" src="img/servicos/fibra2.jpg" alt="Organização de cabos de fibra óptica em caixa de emenda aérea">
+                        <img class="slide-img img2" src="img/servicos/fibra3.jpg" alt="Equipamento de teste OTDR para certificação de enlaces ópticos">
+                        <img class="slide-img img2" src="img/servicos/fibra4.jpg" alt="Preparação e lançamento de cabos de fibra óptica em campo">
+                        <img class="slide-img img2" src="img/servicos/fibra5.jpg" alt="Conectores de fibra óptica em painel distribuidor interno óptico (DIO)">
+                    </div>
+                                        <button class="btn-slide btn-prev" aria-label="Slide anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                                        <button class="btn-slide btn-next" aria-label="Próximo slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="slider-dots"></div>
+                </div>
+            </div>
+
+            <!-- Solução 3 -->
+            <div class="servico-item" id="s-vistoria">
+                <div class="slider-container" data-autoplay="true">
+                    <div class="slider-wrapper">
+                        <img class="slide-img img3" src="img/servicos/vistoria1.jpg" style="display:block" alt="Vistoria técnica detalhada em rack de telecomunicações">
+                        <img class="slide-img img3" src="img/servicos/vistoria2.jpg" alt="Inspeção visual em estação de transmissão externa (site)">
+                        <img class="slide-img img3" src="img/servicos/vistoria3.jpg" alt="Análise de armário e cabos de distribuição externa">
+                        <img class="slide-img img3" src="img/servicos/vistoria4.jpg" alt="Verificação de disjuntores e alimentação elétrica em painel técnico">
+                        <img class="slide-img img3" src="img/servicos/vistoria5.jpg" alt="Inspeção detalhada de conectores e cablagem do distribuidor">
+                        <img class="slide-img img3" src="img/servicos/vistoria6.jpg" alt="Avaliação de layout físico e espaço disponível no rack">
+                        <img class="slide-img img3" src="img/servicos/vistoria7.jpg" alt="Inspeção de barra de aterramento e cabeamento de proteção">
+                    </div>
+                                        <button class="btn-slide btn-prev" aria-label="Slide anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                                        <button class="btn-slide btn-next" aria-label="Próximo slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="slider-dots"></div>
+                </div>
+                <div class="servico-content">
+                    <span class="servico-num">03</span>
+                    <h3 data-i18n="services.s3_title">Vistorias Técnicas para Circuitos de Transmissão</h3>
+                    <p data-i18n="services.s3_desc">Levantamento completo de infraestrutura existente: racks, disjuntores elétricos e malhas de aterramento para garantir a viabilidade e conformidade da instalação de equipamentos.</p>
+                    <a href="#contato" class="btn-action-spec" data-i18n="services.btn_spec">Solicitar Orçamento</a>
+                </div>
+            </div>
+
+            <!-- Solução 4 -->
+            <div class="servico-item alternate-row" id="s-circuito">
+                <div class="servico-content">
+                    <span class="servico-num">04</span>
+                    <h3 data-i18n="services.s4_title">Circuitos de Transmissão de Dados, Voz e Imagem</h3>
+                    <p data-i18n="services.s4_desc">Instalação física e configuração de equipamentos de rede ativos (Switches Metro, Roteadores Edge) para ativação segura e certificada de circuitos corporativos.</p>
+                    <a href="#contato" class="btn-action-spec" data-i18n="services.btn_spec">Solicitar Orçamento</a>
+                </div>
+                <div class="slider-container" data-autoplay="true">
+                    <div class="slider-wrapper">
+                        <img class="slide-img img4" src="img/servicos/circuito1.jpg" style="display:block" alt="Switches e modems ópticos ativos em rack de cliente">
+                        <img class="slide-img img4" src="img/servicos/circuito2.jpg" alt="Equipamentos ativos de roteamento corporativo configurados">
+                        <img class="slide-img img4" src="img/servicos/circuito3.jpg" alt="Cabos de rede RJ45 conectados em portas gigabit de switch">
+                        <img class="slide-img img4" src="img/servicos/circuito4.jpg" alt="Instalação de equipamento transmissor ou antena receptora">
+                        <img class="slide-img img4" src="img/servicos/circuito5.jpg" alt="Técnico verificando o funcionamento físico da infraestrutura">
+                        <img class="slide-img img4" src="img/servicos/circuito6.jpg" alt="Monitores e telas do centro de gerência de redes (NOC)">
+                    </div>
+                                        <button class="btn-slide btn-prev" aria-label="Slide anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                                        <button class="btn-slide btn-next" aria-label="Próximo slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="slider-dots"></div>
+                </div>
+            </div>
+
+            <!-- Solução 5 -->
+            <div class="servico-item" id="s-eletrica">
+                <div class="slider-container" data-autoplay="true">
+                    <div class="slider-wrapper">
+                        <img class="slide-img img5" src="img/servicos/eletrica1.jpg" style="display:block" alt="Instalação e manutenção de engenharia elétrica predial e industrial">
+                        <img class="slide-img img5" src="img/servicos/eletrica2.jpg" alt="Painéis elétricos e comandos industriais de alta precisão">
+                        <img class="slide-img img5" src="img/servicos/eletrica3.jpg" alt="Equipamentos de proteção SPDA e PPCI homologados">
+                    </div>
+                                        <button class="btn-slide btn-prev" aria-label="Slide anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                                        <button class="btn-slide btn-next" aria-label="Próximo slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="slider-dots"></div>
+                </div>
+                <div class="servico-content">
+                    <span class="servico-num">05</span>
+                    <h3 data-i18n="services.s5_title">Instalações Elétricas e Performance Operacional</h3>
+                    <p data-i18n="services.s5_desc">Projetos, execuções e manutenção especializada em engenharia elétrica para garantir a continuidade das operações e máxima eficiência â soluções completas (residencial, predial e industrial) focadas em sustentabilidade, redução de custos e total conformidade técnica com emissão de laudos e ARTs.</p>
+                    <a href="#contato" class="btn-action-spec" data-i18n="services.btn_spec">Solicitar Orçamento</a>
+                </div>
+            </div>
+
+            <!-- Solução 6 -->
+            <div class="servico-item alternate-row" id="s-condominio">
+                <div class="servico-content">
+                    <span class="servico-num">06</span>
+                    <h3 data-i18n="services.s6_title">Gestão de Infraestrutura Condominial e Proteção Patrimonial</h3>
+                    <p data-i18n="services.s6_desc">Gestão completa da infraestrutura condominial integrada a sistemas avançados de segurança e redes â proteção total e inteligente dos seus ativos com tecnologia confiável de alta performance, permitindo que a administração foque no que realmente importa.</p>
+                    <a href="#contato" class="btn-action-spec" data-i18n="services.btn_spec">Solicitar Orçamento</a>
+                </div>
+                <div class="slider-container" data-autoplay="true">
+                    <div class="slider-wrapper">
+                        <img class="slide-img img6" src="img/servicos/infra1.jpg" style="display:block" alt="Gestão completa e manutenção central de infraestrutura predial">
+                        <img class="slide-img img6" src="img/servicos/infra2.jpg" alt="Sistemas de CFTV e controle de acesso integrado de alta segurança">
+                        <img class="slide-img img6" src="img/servicos/infra3.jpg" alt="Infraestrutura de TI com cabeamento estruturado e automação predial">
+                    </div>
+                                        <button class="btn-slide btn-prev" aria-label="Slide anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                                        <button class="btn-slide btn-next" aria-label="Próximo slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="slider-dots"></div>
+                </div>
+            </div>
+
+            <!-- Solução 7 -->
+            <div class="servico-item" id="s-altura">
+                <div class="slider-container" data-autoplay="true">
+                    <div class="slider-wrapper">
+                        <img class="slide-img img7" src="img/servicos/acesso1.jpg" style="display:block" alt="Trabalho em altura com alpinismo industrial e segurança">
+                        <img class="slide-img img7" src="img/servicos/acesso2.jpg" alt="Manutenção de fachadas elevadas sem andaimes">
+                        <img class="slide-img img7" src="img/servicos/acesso3.jpg" alt="Inspeção técnica e instalação elétrica externa vertical">
+                        <img class="slide-img img7" src="img/servicos/acesso4.jpg" alt="Inspeção técnica e instalação elétrica externa vertical">
+                    </div>
+                                        <button class="btn-slide btn-prev" aria-label="Slide anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                                        <button class="btn-slide btn-next" aria-label="Próximo slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="slider-dots"></div>
+                </div>
+                <div class="servico-content">
+                    <span class="servico-num">07</span>
+                    <h3 data-i18n="services.s7_title">Engenharia de Acesso e Trabalhos em Altura</h3>
+                    <p data-i18n="services.s7_desc">Intervenções complexas em fachadas e estruturas elevadas com técnicas de alpinismo industrial â agilidade, economia e máxima segurança.</p>
+                    <a href="#contato" class="btn-action-spec" data-i18n="services.btn_spec">Solicitar Orçamento</a>
+                </div>
+            </div>
+
+            <!-- Solução 8 -->
+            <div class="servico-item alternate-row" id="s-automacao">
+                <div class="servico-content">
+                    <span class="servico-num">08</span>
+                    <h3 data-i18n="services.s8_title">Automação e Design Luminotécnico</h3>
+                    <p data-i18n="services.s8_desc">Transformamos ambientes com tecnologia inteligente â automação residencial, predial e industrial integrada ao design de iluminação arquitetural.</p>
+                    <a href="#contato" class="btn-action-spec" data-i18n="services.btn_spec">Solicitar Orçamento</a>
+                </div>
+                <div class="slider-container" data-autoplay="true">
+                    <div class="slider-wrapper">
+                        <img class="slide-img img8" src="img/servicos/automacao1.jpg" style="display:block" alt="Automação predial e iluminação arquitetural inteligente">
+                        <img class="slide-img img8" src="img/servicos/automacao2.jpg" alt="Integração de motores e processos automatizados">
+                        <img class="slide-img img8" src="img/servicos/automacao3.jpg" alt="Eficiência energética e design luminotécnico integrado">
+                    </div>
+                                        <button class="btn-slide btn-prev" aria-label="Slide anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                                        <button class="btn-slide btn-next" aria-label="Próximo slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="slider-dots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parceiros & Clientes Ticker -->
+    <section id="parceiros-sessao">
+        <!-- Zonas de Detecção de Velocidade Invisíveis (Speed Zones) -->
+        <div class="speed-zone zone-left" aria-hidden="true"></div>
+        <div class="speed-zone zone-right" aria-hidden="true"></div>
+        <div class="container">
+            <span class="section-tag text-center" data-i18n="partners.tag">Nossos Parceiros</span>
+            <h2 class="section-title text-center" data-i18n="partners.title">Quem confia na Fibra</h2>
+            
+            <!-- Ticker 1: Da direita para a esquerda -->
+            <div class="ticker-container">
+                <div class="ticker-track">
+                    <!-- Grupo 1 -->
+                    <div class="ticker-group">
+                        <a href="https://www.vivo.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/vivo.jpg" alt="Vivo"></div></a>
+                        <a href="https://www.vtal.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/vtal.jpg" alt="V.tal"></div></a>
+                        <a href="https://www.oi.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/oi.jpg" alt="Oi"></div></a>
+                        <a href="https://www.brdigital.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/brdigital.jpg" alt="BR Digital"></div></a>
+                        <a href="https://www.antel.com.uy" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/antel.jpg" alt="Antel"></div></a>
+                        <a href="https://web.asn.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/asn.jpg" alt="ASN"></div></a>
+                        <a href="https://ix.com.ar" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/header_ix.jpg" alt="IX.br"></div></a>
+                        <a href="https://www.icomon.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/icomon.jpg" alt="Icomon"></div></a>
+                        <a href="javascript:void(0);" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/sultech.jpg" alt="Sultech"></div></a>
+                        <a href="http://www.marconitelecom.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/marconi.jpg" alt="Marconi"></div></a>
+                        <a href="https://www.mmtelecomunicacoes.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/mm.jpg" alt="MM"></div></a>
+                        <a href="https://www.zopone.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/zopone.jpg" alt="Zopone"></div></a>
+                        <a href="https://www.facebook.com/cetptelecomunicacoes1/" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/cetp.jpg" alt="CETP"></div></a>
+                        <a href="https://www.mynetwork.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/mynetwork.jpg" alt="MyNetwork"></div></a>
+                        <a href="javascript:void(0);" style="cursor: default;" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/joel.jpg" alt="Joel"></div></a>
+
+                        <a href="javascript:void(0);" style="cursor: default;" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/baronesa.jpg" alt="Baronesa"></div></a>
+                        <a href="https://br.linkedin.com/company/egt-do-brasil-tecnology-partners" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/egt.jpg" alt="ETG"></div></a>
+                        <a href="https://www.linkedin.com/in/rafael-vidor-gomes-b195103b4?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/rvg.jpg" alt="RVG"></div></a>
+                        <a href="https://www.vivo.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/vivo_alt.jpg" alt="Vivo"></div></a>
+                        <a href="https://www.phoenixtower.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/oip_1.jpg" alt="Parceiro"></div></a>
+                        <a href="https://seabornnetworks.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/oip_2.jpg" alt="Parceiro"></div></a>
+                        <a href="https://eleadatacenters.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/oip_3.jpg" alt="Parceiro"></div></a>
+                        <a href="https://www.dttelecom.com.br" style="cursor: default;" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_7.jpg" alt="Parceiro"></div></a>
+                        <a href="https://associacaocomercialpoa.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_1.jpg" alt="Parceiro"></div></a>
+                        <a href="https://copelmi.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_2.jpg" alt="Parceiro"></div></a>
+                        <a href="javascript:void(0);" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_3.jpg" alt="Parceiro"></div></a>
+                        <a href="https://www.zaffari.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_4.jpg" alt="Parceiro"></div></a>
+                        <a href="https://isabela.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_5.jpg" alt="Parceiro"></div></a>
+                        <a href="https://www.ipsulpoa.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_6.jpg" alt="Parceiro"></div></a>
+                       
+                        
+                        
+                        
+                       
+                       
+                    </div>
+                    <!-- Grupo 2 (Cópia idêntica para efeito infinito) -->
+                    <div class="ticker-group" aria-hidden="true">
+                        <a href="https://www.vivo.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/vivo.jpg" alt="Vivo"></div></a>
+                        <a href="https://www.vtal.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/vtal.jpg" alt="V.tal"></div></a>
+                        <a href="https://www.oi.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/oi.jpg" alt="Oi"></div></a>
+                        <a href="https://www.brdigital.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/brdigital.jpg" alt="BR Digital"></div></a>
+                        <a href="https://www.antel.com.uy" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/antel.jpg" alt="Antel"></div></a>
+                        <a href="https://web.asn.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/asn.jpg" alt="ASN"></div></a>
+                        <a href="https://ix.com.ar" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/header_ix.jpg" alt="IX.br"></div></a>
+                        <a href="https://www.icomontecnologia.com.br/o"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/icomon.jpg" alt="Icomon"></div></a>
+                        <a href="javascript:void(0);" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/sultech.jpg" alt="Sultech"></div></a>
+                        <a href="http://www.marconitelecom.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/marconi.jpg" alt="Marconi"></div></a>
+                        <a href="https://www.mmtelecomunicacoes.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/mm.jpg" alt="MM"></div></a>
+                        <a href="https://www.zopone.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/zopone.jpg" alt="Zopone"></div></a>
+                        <a href="https://www.facebook.com/cetptelecomunicacoes1/" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/cetp.jpg" alt="CETP"></div></a>
+                        <a href="https://www.mynetwork.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/mynetwork.jpg" alt="MyNetwork"></div></a>
+                        <a href="javascript:void(0);" style="cursor: default;" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/joel.jpg" alt="Joel"></div></a>
+                        
+                        <a href="javascript:void(0);" style="cursor: default;" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/baronesa.jpg" alt="Baronesa"></div></a>
+                        <a href="https://br.linkedin.com/company/egt-do-brasil-tecnology-partners" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/egt.jpg" alt="ETG"></div></a>
+                        <a href="https://www.linkedin.com/in/rafael-vidor-gomes-b195103b4?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/rvg.jpg" alt="RVG"></div></a>
+                        <a href="https://www.vivo.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/vivo_alt.jpg" alt="Vivo"></div></a>
+                        <a href="https://www.phoenixtower.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/oip_1.jpg" alt="Parceiro"></div></a>
+                        <a href="https://seabornnetworks.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/oip_2.jpg" alt="Parceiro"></div></a>
+                        <a href="https://eleadatacenters.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/oip_3.jpg" alt="Parceiro"></div></a>
+                        <a href="https://www.dttelecom.com.br" style="cursor: default;" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_7.jpg" alt="Parceiro"></div></a>
+                        <a href="https://associacaocomercialpoa.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_1.jpg" alt="Parceiro"></div></a>
+                        <a href="https://copelmi.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_2.jpg" alt="Parceiro"></div></a>
+                        <a href="javascript:void(0);" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_3.jpg" alt="Parceiro"></div></a>
+                        <a href="https://www.zaffari.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_4.jpg" alt="Parceiro"></div></a>
+                        <a href="https://isabela.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_5.jpg" alt="Parceiro"></div></a>
+                        <a href="https://www.ipsulpoa.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_6.jpg" alt="Parceiro"></div></a>
+                      
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ticker 2: Da esquerda para a direita -->
+            <div class="ticker-container reverse">
+                <div class="ticker-track">
+                    <!-- Grupo 1 -->
+                    <div class="ticker-group">
+                        <a href="https://www.vivo.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/vivo.jpg" alt="Vivo"></div></a>
+                        <a href="https://www.vtal.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/vtal.jpg" alt="V.tal"></div></a>
+                        <a href="https://www.oi.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/oi.jpg" alt="Oi"></div></a>
+                        <a href="https://www.brdigital.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/brdigital.jpg" alt="BR Digital"></div></a>
+                        <a href="https://www.antel.com.uy" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/antel.jpg" alt="Antel"></div></a>
+                        <a href="https://web.asn.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/asn.jpg" alt="ASN"></div></a>
+                        <a href="https://ix.com.ar" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/header_ix.jpg" alt="IX.br"></div></a>
+                        <a href="https://www.icomon.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/icomon.jpg" alt="Icomon"></div></a>
+                        <a href="javascript:void(0);" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/sultech.jpg" alt="Sultech"></div></a>
+                        <a href="http://www.marconitelecom.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/marconi.jpg" alt="Marconi"></div></a>
+                        <a href="https://www.mmtelecomunicacoes.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/mm.jpg" alt="MM"></div></a>
+                        <a href="https://www.zopone.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/zopone.jpg" alt="Zopone"></div></a>
+                        <a href="https://www.facebook.com/cetptelecomunicacoes1/" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/cetp.jpg" alt="CETP"></div></a>
+                        <a href="https://www.mynetwork.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/mynetwork.jpg" alt="MyNetwork"></div></a>
+                        <a href="javascript:void(0);" style="cursor: default;" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/joel.jpg" alt="Joel"></div></a>
+                       
+                        <a href="javascript:void(0);" style="cursor: default;" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/baronesa.jpg" alt="Baronesa"></div></a>
+                        <a href="https://br.linkedin.com/company/egt-do-brasil-tecnology-partners" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/egt.jpg" alt="ETG"></div></a>
+                        <a href="https://www.linkedin.com/in/rafael-vidor-gomes-b195103b4?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/rvg.jpg" alt="RVG"></div></a>
+                        <a href="https://www.vivo.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/vivo_alt.jpg" alt="Vivo"></div></a>
+                        <a href="https://www.phoenixtower.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/oip_1.jpg" alt="Parceiro"></div></a>
+                        <a href="https://seabornnetworks.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/oip_2.jpg" alt="Parceiro"></div></a>
+                        <a href="https://eleadatacenters.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/oip_3.jpg" alt="Parceiro"></div></a>
+                        <a href="https://www.dttelecom.com.br" style="cursor: default;" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_7.jpg" alt="Parceiro"></div></a>
+                        <a href="https://associacaocomercialpoa.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_1.jpg" alt="Parceiro"></div></a>
+                        <a href="https://copelmi.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_2.jpg" alt="Parceiro"></div></a>
+                        <a href="javascript:void(0);" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_3.jpg" alt="Parceiro"></div></a>
+                        <a href="https://www.zaffari.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_4.jpg" alt="Parceiro"></div></a>
+                        <a href="https://isabela.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_5.jpg" alt="Parceiro"></div></a>
+                        <a href="https://www.ipsulpoa.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_6.jpg" alt="Parceiro"></div></a>
+                        
+                       
+                        
+                        
+                        
+                    </div>
+                    <!-- Grupo 2 (Cópia idêntica para efeito infinito) -->
+                    <div class="ticker-group" aria-hidden="true">
+                        <a href="https://www.vivo.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/vivo.jpg" alt="Vivo"></div></a>
+                        <a href="https://www.vtal.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/vtal.jpg" alt="V.tal"></div></a>
+                        <a href="https://www.oi.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/oi.jpg" alt="Oi"></div></a>
+                        <a href="https://www.brdigital.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/brdigital.jpg" alt="BR Digital"></div></a>
+                        <a href="https://www.antel.com.uy" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/antel.jpg" alt="Antel"></div></a>
+                        <a href="https://web.asn.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/asn.jpg" alt="ASN"></div></a>
+                        <a href="https://ix.com.ar" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/header_ix.jpg" alt="IX.br"></div></a>
+                        <a href="https://www.icomon.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/icomon.jpg" alt="Icomon"></div></a>
+                        <a href="javascript:void(0);" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/sultech.jpg" alt="Sultech"></div></a>
+                        <a href="http://www.marconitelecom.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/marconi.jpg" alt="Marconi"></div></a>
+                        <a href="https://www.mmtelecomunicacoes.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/mm.jpg" alt="MM"></div></a>
+                        <a href="https://www.zopone.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/zopone.jpg" alt="Zopone"></div></a>
+                        <a href="https://www.facebook.com/cetptelecomunicacoes1/" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/cetp.jpg" alt="CETP"></div></a>
+                        <a href="https://www.mynetwork.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/mynetwork.jpg" alt="MyNetwork"></div></a>
+                        <a href="javascript:void(0);" style="cursor: default;" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/joel.jpg" alt="Joel"></div></a>
+                        
+                        <a href="javascript:void(0);" style="cursor: default;" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/baronesa.jpg" alt="Baronesa"></div></a>
+                        <a href="https://br.linkedin.com/company/egt-do-brasil-tecnology-partners" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/egt.jpg" alt="ETG"></div></a>
+                        <a href="https://www.linkedin.com/in/rafael-vidor-gomes-b195103b4?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/rvg.jpg" alt="RVG"></div></a>
+                        <a href="https://www.vivo.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/vivo_alt.jpg" alt="Vivo"></div></a>
+                        <a href="https://www.phoenixtower.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/oip_1.jpg" alt="Parceiro"></div></a>
+                        <a href="https://seabornnetworks.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/oip_2.jpg" alt="Parceiro"></div></a>
+                        <a href="https://eleadatacenters.com" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/oip_3.jpg" alt="Parceiro"></div></a>
+                        <a href="https://www.dttelecom.com.br" style="cursor: default;" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_7.jpg" alt="Parceiro"></div></a>
+                        <a href="https://associacaocomercialpoa.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_1.jpg" alt="Parceiro"></div></a>
+                        <a href="https://copelmi.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_2.jpg" alt="Parceiro"></div></a>
+                        <a href="javascript:void(0);" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_3.jpg" alt="Parceiro"></div></a>
+                        <a href="https://www.zaffari.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_4.jpg" alt="Parceiro"></div></a>
+                        <a href="https://isabela.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_5.jpg" alt="Parceiro"></div></a>
+                        <a href="https://www.ipsulpoa.com.br" target="_blank" class="ticker-logo"><div class="ticker-logo-inner"><img class="partner-logo" src="img/clientes/parceiro_wa_6.jpg" alt="Parceiro"></div></a>
+
+                        
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <div class="container">
+            <span class="section-tag" data-i18n="contact.tag">Contato</span>
+            <h2 class="section-title" data-i18n="contact.title">Fale Conosco</h2>
+            
+            <div class="contato-wrapper">
+                <!-- Informações de Contato -->
+                <div class="info-contato card-neon">
+                    <h3 data-i18n="contact.channels_title">Canais de Atendimento</h3>
+                    <p class="contato-info-desc" data-i18n="contact.channels_desc">Localizada estrategicamente em Porto Alegre - RS, facilitando o deslocamento para obras e atendimentos rápidos de emergência.</p>
+                    
+                    <div class="contato-channels">
+                        <a href="https://api.whatsapp.com/send?phone=555130620040" target="_blank" class="channel-item">
+                            <span class="icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            </span>
+                            <div>
+                                <strong data-i18n="contact.whatsapp_biz">Telefone / WhatsApp Business</strong>
+                                <span class="channel-link">+55 51 3062-0040</span>
+                            </div>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5551984421238" target="_blank" class="channel-item">
+                            <span class="icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                            </span>
+                            <div>
+                                <strong data-i18n="contact.support_emergency">Suporte Técnico 24h para atendimentos emergenciais</strong>
+                                <span class="channel-link">+55 51 98442-1238</span>
+                            </div>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=comercial@fibratecnologia.com.br" target="_blank" class="channel-item">
+                            <span class="icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </span>
+                            <div>
+                                <strong data-i18n="contact.email_biz">E-mail Comercial</strong>
+                                <span class="channel-link">comercial@fibratecnologia.com.br</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/fibra-tecnologia" class="social-icon" target="_blank" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/fibra.tecnologia" class="social-icon" target="_blank" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=comercial@fibratecnologia.com.br" class="social-icon" target="_blank" aria-label="Enviar E-mail">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulário de Contato Moderno -->
+                <div class="form-contato-container card-neon">
+                    <h3 data-i18n="contact.form_title">Envie uma Mensagem</h3>
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="form-name" data-i18n="contact.label_name">Nome Completo</label>
+                                <input type="text" id="form-name" data-i18n-placeholder="contact.placeholder_name" placeholder="Digite seu nome" required>
+                                <span class="error-msg">Por favor, insira seu nome completo</span>
+                            </div>
+                            <div class="input-group">
+                                <label for="form-email" data-i18n="contact.label_email">E-mail Corporativo</label>
+                                <input type="email" id="form-email" data-i18n-placeholder="contact.placeholder_email" placeholder="nome@empresa.com" required>
+                                <span class="error-msg">Por favor, insira um e-mail válido</span>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="form-subject" data-i18n="contact.label_subject">Assunto</label>
+                            <input type="text" id="form-subject" data-i18n-placeholder="contact.placeholder_subject" placeholder="Ex: Orçamento de Fusão Óptica" required>
+                            <span class="error-msg">O assunto é obrigatório</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="form-message" data-i18n="contact.label_message">Mensagem</label>
+                            <textarea id="form-message" rows="5" data-i18n-placeholder="contact.placeholder_message" placeholder="Descreva brevemente sua infraestrutura ou necessidade de serviço..." required></textarea>
+                            <span class="error-msg">A mensagem não pode ficar vazia</span>
+                        </div>
+                        <button type="submit" class="btn btn-submit">
+                            <span class="btn-text" data-i18n="contact.btn_submit">Enviar Mensagem</span>
+                            <span class="btn-spinner"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Mapa Integrado -->
+            <div class="map-box mt-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.8736386617916!2d-51.188527784886276!3d-29.983061281904714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197a039186bbe5%3A0x765ddf21fce84c8e!2sAv.%20Jos%C3%A9%20Alo%C3%ADsio%20Filho%2C%20595%20-%20Bloco%3A%20H%20Ap.%20529%20-%20Humait%C3%A1%2C%20Porto%20Alegre%20-%20RS%2C%2090250-180!5e0!3m2!1spt-BR!2sbr!4v1585588188849!5m2!1spt-BR!2sbr" 
+                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h4>FIBRA TECNOLOGIA</h4>
+                <p data-i18n="footer.about_desc">Soluções em Sistemas de Transporte da Informação. Especialistas em infraestrutura crítica e telecomunicações.</p>
+                <div class="footer-cft">
+                    <span class="badge-cft" data-i18n="footer.cft">REGISTRO CFT/CREA ATIVO</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer.nav_title">Navegação</h4>
+                <ul>
+                    <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#institucional" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="#servicos" data-i18n="nav.services">Serviços</a></li>
+                    <li><a href="#parceiros-sessao" data-i18n="nav.partners">Parceiros</a></li>
+                    <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer.systems_title">Sistemas</h4>
+                <ul>
+                    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=comercial@fibratecnologia.com.br" target="_blank" data-i18n="footer.webmail">Acesso Webmail</a></li>
+                    <li><a href="#contato" data-i18n="footer.support">Suporte Técnico</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.rights">&copy; <span id="currentYear">2026</span> Fibra Tecnologia. Todos os direitos reservados.</p>
+            <p data-i18n="footer.city">Porto Alegre / RS</p>
+        </div>
+    </footer>
+
+    <!-- Modais de Especificações Técnicas (Serviços) -->
+    <!-- Modal 1: Infraestrutura -->
+    <div id="modal-infra" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-num">01</span>
+                <h3 data-i18n="modals.m1_title">Infraestrutura de TI & Telecomunicações</h3>
+            </div>
+            <p class="modal-desc" data-i18n="modals.m1_desc">Detalhamento dos padrões construtivos e engenharia elétrica para infraestruturas críticas de transporte de informação.</p>
+            <div class="modal-grid">
+                <div class="modal-col">
+                    <h5 data-i18n="modals.m1_c1_title">Cabeamento Estruturado</h5>
+                    <ul>
+                        <li data-i18n="modals.m1_c1_i1">Redes Cat5e, Cat6 e Cat6A em conformidade com as normas ANSI/TIA-568 e ABNT NBR 14565.</li>
+                        <li data-i18n="modals.m1_c1_i2">Certificação de canais com testadores de cabo homologados Fluke Networks.</li>
+                        <li data-i18n="modals.m1_c1_i3">Montagem de racks padrão 19 polegadas com organizadores de cabos de alta densidade.</li>
+                    </ul>
+                </div>
+                <div class="modal-col">
+                    <h5 data-i18n="modals.m1_c2_title">Energia Ininterrupta & SPDA</h5>
+                    <ul>
+                        <li data-i18n="modals.m1_c2_i1">Implantação de retificadores de corrente contínua e inversores para sistemas de Telecom.</li>
+                        <li data-i18n="modals.m1_c2_i2">Dimensionamento e instalação de no breaks senoidais e bancos de baterias estacionárias.</li>
+                        <li data-i18n="modals.m1_c2_i3">Adequação de quadros de distribuição de energia com disjuntores e DPS.</li>
+                        <li data-i18n="modals.m1_c2_i4">Verificação e adequação de malhas de aterramento de proteção técnica.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Fibra Óptica -->
+    <div id="modal-fibra" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-num">02</span>
+                <h3 data-i18n="modals.m2_title">Redes de Fibra Óptica</h3>
+            </div>
+            <p class="modal-desc" data-i18n="modals.m2_desc">Serviços profissionais de projeto, construção, emenda e certificação de links de fibra óptica de longa e curta distância.</p>
+            <div class="modal-grid">
+                <div class="modal-col">
+                    <h5 data-i18n="modals.m2_c1_title">Lançamento e Fusão</h5>
+                    <ul>
+                        <li data-i18n="modals.m2_c1_i1">Lançamento aéreo (auto-sustentado) e subterrâneo (dutos) de cabos ópticos SM e MM.</li>
+                        <li data-i18n="modals.m2_c1_i2">Emenda por fusão óptica através de máquinas de fusão digitais com alinhamento pelo núcleo.</li>
+                        <li data-i18n="modals.m2_c1_i3">Montagem e sangria de caixas de emenda óptica (CEO) e distribuidores ópticos (DIO).</li>
+                    </ul>
+                </div>
+                <div class="modal-col">
+                    <h5 data-i18n="modals.m2_c2_title">Testes e Homologação</h5>
+                    <ul>
+                        <li data-i18n="modals.m2_c2_i1">Testes de atenuação e perda de retorno com Power Meter e fontes ópticas estáveis.</li>
+                        <li data-i18n="modals.m2_c2_i2">Localização de falhas, medição de distância e atenuações de fusão através de OTDR (Refletometria).</li>
+                        <li data-i18n="modals.m2_c2_i3">Elaboração de documentação As-Built detalhada contendo diagramas unifilares e relatórios OTDR.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Vistorias -->
+    <div id="modal-vistoria" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-num">03</span>
+                <h3 data-i18n="modals.m3_title">Vistorias de Viabilidade de Transmissão</h3>
+            </div>
+            <p class="modal-desc" data-i18n="modals.m3_desc">Relatórios detalhados de viabilidade técnica operacional para a ativação confiável de circuitos de dados.</p>
+            <div class="modal-grid">
+                <div class="modal-col">
+                    <h5 data-i18n="modals.m3_c1_title">Inspeção Física & Espaço</h5>
+                    <ul>
+                        <li data-i18n="modals.m3_c1_i1">Avaliação de espaço em racks existentes, encaminhamento de cabos e acessos físicos.</li>
+                        <li data-i18n="modals.m3_c1_i2">Levantamento de rotas de entrada de cabos metálicos ou ópticos (Last Mile).</li>
+                        <li data-i18n="modals.m3_c1_i3">Análise de layouts de racks e layout de salas de telecomunicações corporativas.</li>
+                    </ul>
+                </div>
+                <div class="modal-col">
+                    <h5 data-i18n="modals.m3_c2_title">Inspeção Elétrica & Climatização</h5>
+                    <ul>
+                        <li data-i18n="modals.m3_c2_i1">Verificação de disjuntores e alimentação disponíveis nas réguas CA ou CC do site.</li>
+                        <li data-i18n="modals.m3_c2_i2">Medição da resistência de aterramento e conexões das barras de terra (TGB/TMGB).</li>
+                        <li data-i18n="modals.m3_c2_i3">Avaliação de temperatura ambiente e infraestrutura de ar condicionado instalada.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Transmissão -->
+    <div id="modal-circuito" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-num">04</span>
+                <h3 data-i18n="modals.m4_title">Circuitos de Transmissão Corporativos</h3>
+            </div>
+            <p class="modal-desc" data-i18n="modals.m4_desc">Ativação técnica, homologação física e parametrização lógica de equipamentos de rede ativos de alta velocidade.</p>
+            <div class="modal-grid">
+                <div class="modal-col">
+                    <h5 data-i18n="modals.m4_c1_title">Instalação & Configuração</h5>
+                    <ul>
+                        <li data-i18n="modals.m4_c1_i1">Instalação física e cabeamento de switches Metro Ethernet e roteadores de borda.</li>
+                        <li data-i18n="modals.m4_c1_i2">Configuração de VLANs, rotas estáticas e protocolos de gerência em modems ópticos e ONUs.</li>
+                        <li data-i18n="modals.m4_c1_i3">Organização de patch cords ópticos de interconexão com protetores e curvas adequadas.</li>
+                    </ul>
+                </div>
+                <div class="modal-col">
+                    <h5 data-i18n="modals.m4_c2_title">Certificação e Testes lógicos</h5>
+                    <ul>
+                        <li data-i18n="modals.m4_c2_i1">Realização de testes de tráfego, taxa de erro (BER) e latência em circuitos integrados.</li>
+                        <li data-i18n="modals.m4_c2_i2">Auditoria de entrega física e sinal de potência óptica de recepção (Rx).</li>
+                        <li data-i18n="modals.m4_c2_i3">Configuração de suporte técnico para gerência remota através do NOC da operadora.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Engenharia Elétrica -->
+    <div id="modal-eletrica" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-num">05</span>
+                <h3 data-i18n="modals.m5_title">Instalações Elétricas & Performance</h3>
+            </div>
+            <p class="modal-desc" data-i18n="modals.m5_desc">Projetos, execuções e manutenção em instalações elétricas com foco em eficiência, sustentabilidade e conformidade técnica.</p>
+            <div class="modal-grid">
+                <div class="modal-col">
+                    <h5 data-i18n="modals.m5_c1_title">Projetos e Sistemas</h5>
+                    <ul>
+                        <li data-i18n="modals.m5_c1_i1">Projetos elétricos, painéis e comandos industriais: Desenvolvimento e montagem de sistemas de força e comando.</li>
+                        <li data-i18n="modals.m5_c1_i2">SPDA e Padrão de Entrada: Proteção contra descargas atmosféricas e homologação junto às concessionárias (RGE, CEEE, ANEEL).</li>
+                        <li data-i18n="modals.m5_c1_i3">Adequações e Segurança: Soluções em PPCI, sistemas AVCB e bombas de recalque.</li>
+                    </ul>
+                </div>
+                <div class="modal-col">
+                    <h5 data-i18n="modals.m5_c2_title">Gestão e Monitoramento</h5>
+                    <ul>
+                        <li data-i18n="modals.m5_c2_i1">Gestão de Conformidade: Emissão de laudos, ARTs, relatórios técnicos e documentação regulamentar.</li>
+                        <li data-i18n="modals.m5_c2_i2">Suporte Ininterrupto: Monitoramento contínuo para operação segura e de alto desempenho.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Gestão Condominial -->
+    <div id="modal-condominio" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-num">06</span>
+                <h3 data-i18n="modals.m6_title">Gestão Condominial & Proteção Patrimonial</h3>
+            </div>
+            <p class="modal-desc" data-i18n="modals.m6_desc">Gestão integrada de infraestrutura condominial com redes de comunicação e sistemas eletrônicos avançados de segurança.</p>
+            <div class="modal-grid">
+                <div class="modal-col">
+                    <h5 data-i18n="modals.m6_c1_title">Infraestrutura e Redes</h5>
+                    <ul>
+                        <li data-i18n="modals.m6_c1_i1">Manutenções Centrais: Ações preventivas e corretivas em sistemas hidráulicos e elétricos prediais.</li>
+                        <li data-i18n="modals.m6_c1_i2">Infraestrutura de TI: Cabeamento estruturado e redes inteligentes integradas à automação.</li>
+                        <li data-i18n="modals.m6_c1_i3">Logística de Atendimento: Agilidade no suporte, cumprimento rigoroso de prazos e máxima segurança.</li>
+                    </ul>
+                </div>
+                <div class="modal-col">
+                    <h5 data-i18n="modals.m6_c2_title">Segurança e Controle</h5>
+                    <ul>
+                        <li data-i18n="modals.m6_c2_i1">CFTV e Controle de Acesso: Monitoramento profissional, biometria, tags e eclusas de segurança.</li>
+                        <li data-i18n="modals.m6_c2_i2">Sistemas de Alarme e Detecção: Sensores periféricos e combate/detecção de incêndio automatizados.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7: Trabalhos em Altura -->
+    <div id="modal-altura" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-num">07</span>
+                <h3 data-i18n="modals.m7_title">Acesso e Trabalhos em Altura</h3>
+            </div>
+            <p class="modal-desc" data-i18n="modals.m7_desc">Serviços especializados de alpinismo industrial e engenharia de acesso para fachadas e locais de difícil acesso.</p>
+            <div class="modal-grid">
+                <div class="modal-col">
+                    <h5 data-i18n="modals.m7_c1_title">Instalações & Manutenção</h5>
+                    <ul>
+                        <li data-i18n="modals.m7_c1_i1">Instalações elétricas externas em fachadas.</li>
+                        <li data-i18n="modals.m7_c1_i2">Iluminação arquitetural de fachadas.</li>
+                        <li data-i18n="modals.m7_c1_i3">Manutenções críticas sem necessidade de andaimes.</li>
+                    </ul>
+                </div>
+                <div class="modal-col">
+                    <h5 data-i18n="modals.m7_c2_title">Inspeção & Laudos</h5>
+                    <ul>
+                        <li data-i18n="modals.m7_c2_i1">Inspeções técnicas detalhadas sem impacto estrutural.</li>
+                        <li data-i18n="modals.m7_c2_i2">ARTs, relatórios fotográficos de patologias em fachadas e vistorias verticais.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8: Automação e Design Luminotécnico -->
+    <div id="modal-automacao" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-num">08</span>
+                <h3 data-i18n="modals.m8_title">Automação & Luminotécnico</h3>
+            </div>
+            <p class="modal-desc" data-i18n="modals.m8_desc">Projetos de automação de sistemas e iluminação inteligente com foco em conforto, estética e eficiência energética.</p>
+            <div class="modal-grid">
+                <div class="modal-col">
+                    <h5 data-i18n="modals.m8_c1_title">Automação & Integração</h5>
+                    <ul>
+                        <li data-i18n="modals.m8_c1_i1">Automação de residências, edifícios e indústrias.</li>
+                        <li data-i18n="modals.m8_c1_i2">Integração de motores e processos automatizados.</li>
+                        <li data-i18n="modals.m8_c1_i3">Controle integrado de dispositivos, climatização e áudio/vídeo.</li>
+                    </ul>
+                </div>
+                <div class="modal-col">
+                    <h5 data-i18n="modals.m8_c2_title">Iluminação & Eficiência</h5>
+                    <ul>
+                        <li data-i18n="modals.m8_c2_i1">Iluminação arquitetural interna e externa.</li>
+                        <li data-i18n="modals.m8_c2_i2">Eficiência energética e sustentabilidade baseada em cenários de controle de luz.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notificações Toast -->
+    <div id="toastNotification" class="toast">
+        <span class="toast-icon">✓</span>
+        <span class="toast-message" data-i18n="toast.success">Mensagem enviada com sucesso!</span>
+    </div>
+
+    <!-- Botão WhatsApp Flutuante Animado -->
+    <a href="https://api.whatsapp.com/send?phone=5551984421238" class="whatsapp-float pulse-anim" target="_blank" aria-label="Fale Conosco no WhatsApp" data-i18n-aria="whatsapp.aria">
+        <img src="img/icons/Whatsapp_icon.png" alt="WhatsApp Icon">
+        <span class="pulse-ring"></span>
+        <span class="whatsapp-badge">1</span>
+    </a>
+
+    <script src="js/translations.js" charset="utf-8"></script>
+    <script src="js/translate.js" charset="utf-8"></script>
+    <script src="js/main.js?v=2.0.0" charset="utf-8"></script>
+
+</body>
+
+</html>
